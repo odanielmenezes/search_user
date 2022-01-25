@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useReducer, useState } from "react";
 import Styled from '../style/main'
+import {Header} from '../components/header'
 import { message, Badge } from "antd";
 import { SearchOutlined, StarOutlined, DeleteOutlined, CopyOutlined, GithubOutlined } from '@ant-design/icons'
 import 'antd/dist/antd.css';
@@ -134,16 +135,9 @@ export function Main() {
     }
     return (
         <Styled>
+            <Header data={user}/>
             <div className="container">
                 <div className="src">
-                    {user.length !== 0
-                        ? <div className="user">
-                            {user.length !== 0 ? <img src={user.avatar_url} alt={user.avatar_url} /> : <></>}<br />
-                            <h1>{user.name}</h1><br />
-                            <small>{user.location}</small>
-                        </div>
-                        : <></>
-                    }
                     <button type="submit" onClick={searchUser} className="srcIcon"><SearchOutlined /></button>
                     <input type="text" className="input" id="busca" placeholder="Procurar por usuário" required />
                     <Badge count={repositories.length}>

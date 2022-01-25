@@ -5,33 +5,15 @@ const Wrapper = styled.div`
     font-family: Sans-serif;
     background: #16161a;
 }
-body {
-}
 .container {
     height: 100vh;
-    h2{
-        color: #FFF;
-        margin-top: 10vh;
-        text-align:center;
-        position: relative;
-        animation: opacidade 1s infinite;
-        animation-direction: alternate;
 
-        @keyframes opacidade {
-            0%  {opacity:0;}
-            20% {opacity:0.2;}
-            40% {opacity:0.4;}
-            60% {opacity:0.6;}
-            80% {opacity: 0.8;}
-            100% {opacity:1;}
-        }
-    }
     .info {        
         img{
             margin: 150px auto;
             width: 400px;
             height: 200px;
-    }
+        }
     }
 
     .table {
@@ -44,7 +26,7 @@ body {
         width: 38vw;
         overflow:scroll;
         padding: 20px;
-        margin: 30px auto; 
+        margin: 0 auto; 
 
         th {
             padding: 10px;
@@ -95,8 +77,8 @@ body {
                 cursor: pointer;
 
                 svg {
-                    background: rgb(130,87,229);
                     transition: 0.3s;
+                    background: rgb(130,87,229);
                 }
             }
             button:hover {
@@ -114,29 +96,6 @@ body {
             }
             .repos {
                 background: rgb(130,87,229);
-            }
-        }
-        .user{
-            color: #FFF;
-            position: absolute;
-            left: 20px;
-            text-align: center;
-
-            img{
-                width: 150px;
-                height: 150px;
-                border-radius: 50%;
-                border: 5px solid rgb(130,87,229);
-            }
-
-            small {
-                margin: 0 10px 0 10px;
-                font-weight: bold;
-                font-size: 14px;
-            }
-            h1 {
-                color: #CCC;
-                margin: 0;
             }
         }
         .acoes {
