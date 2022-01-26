@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
 *{
     font-family: Sans-serif;
-    background: #16161a;
+    background: rgb(13, 17, 23);
 }
 .container {
     height: 100vh;
